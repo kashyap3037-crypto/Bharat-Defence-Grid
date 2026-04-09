@@ -199,16 +199,14 @@ body {
 /* Scanned Lines / Noise Effect (Tactical Feel) */
 /* Hero Section */
 .hero {
-    min-height: 70vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(5, 10, 20, 0.7) 0%, rgba(5, 10, 20, 0.8) 100%), url('./assets/hero-main.png');
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid var(--border-color);
