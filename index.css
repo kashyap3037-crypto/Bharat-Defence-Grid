@@ -851,7 +851,7 @@ body {
         font-size: 0.75rem;
     }
 
-    /* High Specificity Mobile Carousel - Single Item Focus */
+    /* High Specificity Mobile Carousel - Single Card View */
     body .operations-grid, 
     body .org-grid {
         display: flex !important;
@@ -859,10 +859,12 @@ body {
         flex-wrap: nowrap !important;
         overflow-x: auto !important;
         scroll-snap-type: x mandatory !important;
-        scroll-behavior: smooth !important;
-        gap: 0 !important; /* No gap for single item focus */
-        padding: 0 !important;
-        margin: 0 !important;
+        gap: 0 !important; /* Remove gap for seamless full-width */
+        padding-bottom: 2rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 0 !important; 
+        margin-right: 0 !important;
         scrollbar-width: none !important;
         -ms-overflow-style: none !important;
         width: 100% !important;
@@ -875,16 +877,12 @@ body {
 
     .operations-grid > .info-block,
     .org-grid > .org-card {
-        flex: 0 0 100% !important; /* EXACTLY one item at a time */
+        flex: 0 0 100% !important; /* EXACTLY ONE CARD FULL WIDTH */
         scroll-snap-align: center !important;
-        scroll-snap-stop: always !important;
         height: auto !important;
-        border-radius: 0 !important; /* Square for full edge-to-edge look */
-    }
-
-    .operations-grid > .info-block:last-child,
-    .org-grid > .org-card:last-child {
-        margin-right: 20px !important;
+        border-radius: 0 !important; /* Seamless feel if full width */
+        border-left: none !important;
+        border-right: none !important;
     }
 
     .intel-card {
