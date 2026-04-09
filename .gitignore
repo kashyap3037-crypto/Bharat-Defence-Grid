@@ -1,0 +1,19 @@
+# OS Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tool Specific (AI / IDE)
+.gemini/
+.vs/
+.vscode/
+
+# Local Deployment Testing
+dist/
+build/
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

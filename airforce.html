@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Air Force | Defence India</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .detail-hero {
+            padding: 8rem 4rem 4rem;
+            background: linear-gradient(rgba(5, 10, 20, 0.4), rgba(5, 10, 20, 0.7)), url('./assets/airforce-hero.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1;
+        }
+
+
+        .detail-content {
+            padding: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tab Styles */
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .tab-btn i {
+            font-size: 1.1rem;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-color);
+            color: #000;
+            border-color: var(--accent-color);
+        }
+
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-premium);
+            height: 100%;
+        }
+
+        .info-block h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+            line-height: 1.6;
+        }
+
+        .info-list li i {
+            color: var(--accent-color);
+            margin-top: 0.3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <i class="fas fa-shield-halved"></i>
+                    Defence <span>Pulse</span>
+                </div>
+            </a>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="army.html" class="nav-link">Army</a></li>
+            <li><a href="navy.html" class="nav-link">Navy</a></li>
+            <li><a href="airforce.html" class="nav-link active">Air Force</a></li>
+            <li><a href="tech.html" class="nav-link">Joint Forces</a></li>
+        </ul>
+
+        <div class="nav-right">
+
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <h1 style="font-size: 3.5rem; font-weight: 800; color: white;">INDIAN AIR FORCE</h1>
+        <p style="color: rgba(255,255,255,0.8); max-width: 800px; margin: 1.5rem auto;">Nabhah Sparsham Diptam — Touch
+            the Sky with Glory.</p>
+    </header>
+
+    <main class="detail-content">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+
+        <!-- Custom Tab Navigation -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="showTab('assets')"><i class="fas fa-plane-up"></i> Key
+                Assets</button>
+            <button class="tab-btn" onclick="showTab('missions')"><i class="fas fa-cloud-bolt"></i> Missions &
+                Operations</button>
+            <button class="tab-btn" onclick="showTab('focus')"><i class="fas fa-rocket"></i> Strategic Focus</button>
+        </div>
+
+        <!-- Tab Panes -->
+        <div id="assets" class="tab-pane active">
+            <div class="info-block">
+                <h2><i class="fas fa-plane-up"></i> Key Assets</h2>
+                <ul class="info-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Fighters:</strong> Rafale, Su-30 MKI, Tejas Mk1A.
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Transport:</strong> C-17 Globemaster, C-130J Super
+                        Hercules.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Air Defence:</strong> S-400 Triumf, Akash, MRSAM.
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Strategic:</strong> Netra AEW&C, IL-78 Refuellers.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="missions" class="tab-pane">
+            <div class="info-block" style="margin-bottom: 3rem;">
+                <h2><i class="fas fa-cloud-bolt"></i> Mission</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                    To defend Indian airspace, achieve air superiority, and deliver rapid, precise offensive and
+                    defensive air operations.
+                </p>
+            </div>
+
+            <h2 class="section-title">Historic Operations</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">1947–1948</span>
+                    <div class="timeline-content">
+                        <h3>Air Operations (Kashmir)</h3>
+                        <p>Vital airlift and combat support during the first Indo-Pak war, ensuring early tactical
+                            superiority.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">1962</span>
+                    <div class="timeline-content">
+                        <h3>Air Support (Indo-China)</h3>
+                        <p>Critical logistics, transport, and supply missions across extremely challenging high-altitude
+                            terrain.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">1965</span>
+                    <div class="timeline-content">
+                        <h3>Indo-Pak War</h3>
+                        <p>Establishment of air superiority over West Pakistan and heroic support during the Battle of
+                            Asal Uttar.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">Dec 1971</span>
+                    <div class="timeline-content">
+                        <h3>1971 War Campaigns</h3>
+                        <p>Decisive strikes including the legendary Battle of Longewala, where the IAF decimated an
+                            armored regiment.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">1999</span>
+                    <div class="timeline-content">
+                        <h3>Operation Safed Sagar</h3>
+                        <p>The first high-altitude operation of its kind, using precision strikes to evict infiltrators
+                            from Kargil heights.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">26 Feb 2019</span>
+                    <div class="timeline-content">
+                        <h3>Balakot Airstrike</h3>
+                        <p>A precision cross-border pre-emptive strike on major terror launchpads, demonstrating
+                            deep-strike capability.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2022</span>
+                    <div class="timeline-content">
+                        <h3>Operation Ganga</h3>
+                        <p>Massive strategic airlift to rescue thousands of Indian students from the conflict zone in
+                            Ukraine.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2025</span>
+                    <div class="timeline-content">
+                        <h3>Operation Sindoor</h3>
+                        <p>A joint Indian Army–Air Force precision strike targeting terrorist infrastructure with high
+                            accuracy.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="focus" class="tab-pane">
+            <div class="info-block">
+                <h2><i class="fas fa-rocket"></i> Strategic Focus</h2>
+                <ul class="info-list">
+                    <li><i class="fas fa-jet-fighter"></i> <strong>Air Dominance:</strong> Deploying advanced fighters
+                        like Rafale, Su-30, and Tejas.</li>
+                    <li><i class="fas fa-crosshairs"></i> <strong>Precision Strikes:</strong> Enhancing network-centric
+                        warfare capabilities.</li>
+                    <li><i class="fas fa-truck-plane"></i> <strong>Strategic Airlift:</strong> Rapid deployment and
+                        global reach capability.</li>
+                    <li><i class="fas fa-satellite"></i> <strong>Space-Based Ops:</strong> Integration of UAVs, drones,
+                        and space assets.</li>
+                    <li><i class="fas fa-microchip"></i> <strong>Indigenous Tech:</strong> Strengthening localized
+                        aerospace R&D.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>

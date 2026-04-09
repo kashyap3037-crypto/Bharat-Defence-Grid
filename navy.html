@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Navy | Defence India</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .detail-hero {
+            padding: 8rem 4rem 4rem;
+            background: linear-gradient(rgba(5, 10, 20, 0.4), rgba(5, 10, 20, 0.7)), url('./assets/navy-hero.png');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            border-bottom: 3px solid transparent;
+            border-image: linear-gradient(to right, #FF9933, #FFFFFF, #138808) 1;
+        }
+
+
+        .detail-content {
+            padding: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tab Styles */
+        .tabs-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .tab-btn i {
+            font-size: 1.1rem;
+        }
+
+        .tab-btn.active {
+            background: var(--accent-color);
+            color: #000;
+            border-color: var(--accent-color);
+        }
+
+        .tab-pane {
+            display: none;
+            animation: fadeIn 0.4s ease forwards;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .info-block {
+            background: var(--bg-secondary);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-premium);
+            height: 100%;
+        }
+
+        .info-block h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+            line-height: 1.6;
+        }
+
+        .info-list li i {
+            color: var(--accent-color);
+            margin-top: 0.3rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="logo">
+                    <i class="fas fa-shield-halved"></i>
+                    Defence <span>Pulse</span>
+                </div>
+            </a>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="army.html" class="nav-link">Army</a></li>
+            <li><a href="navy.html" class="nav-link active">Navy</a></li>
+            <li><a href="airforce.html" class="nav-link">Air Force</a></li>
+            <li><a href="tech.html" class="nav-link">Joint Forces</a></li>
+        </ul>
+
+        <div class="nav-right">
+
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <h1 style="font-size: 3.5rem; font-weight: 800; color: white;">INDIAN NAVY</h1>
+        <p style="color: rgba(255,255,255,0.8); max-width: 800px; margin: 1.5rem auto;">Sham No Varunah — May the Lord
+            of Water be auspicious unto us.</p>
+    </header>
+
+    <main class="detail-content">
+        <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
+
+        <!-- Custom Tab Navigation -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="showTab('assets')"><i class="fas fa-ship"></i> Key Assets</button>
+            <button class="tab-btn" onclick="showTab('missions')"><i class="fas fa-compass"></i> Missions &
+                Operations</button>
+            <button class="tab-btn" onclick="showTab('focus')"><i class="fas fa-crosshairs"></i> Strategic
+                Focus</button>
+        </div>
+
+        <!-- Tab Panes -->
+        <div id="assets" class="tab-pane active">
+            <div class="info-block">
+                <h2><i class="fas fa-anchors"></i> Key Assets</h2>
+                <ul class="info-list">
+                    <li><i class="fas fa-check-circle"></i> <strong>Carriers:</strong> INS Vikramaditya, INS Vikrant.
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Submarines:</strong> Kalvari-class, Arihant-class
+                        (Nuclear).</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Destroyers:</strong> Visakhapatnam-class,
+                        Kolkata-class.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Aviation:</strong> MiG-29K, P-8I Poseidon, MH-60R
+                        Seahawk.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="missions" class="tab-pane">
+            <div class="info-block" style="margin-bottom: 3rem;">
+                <h2><i class="fas fa-compass"></i> Mission</h2>
+                <p style="color: var(--text-secondary); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                    To secure India’s maritime borders, protect sea lanes, and ensure dominance in the Indian Ocean
+                    Region.
+                </p>
+            </div>
+
+            <h2 class="section-title">Historic Operations</h2>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">4 Dec 1971</span>
+                    <div class="timeline-content">
+                        <h3>Operation Trident</h3>
+                        <p>A daring missile boat attack on Karachi harbour, inflicting heavy damage on the Pakistani Navy.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">8 Dec 1971</span>
+                    <div class="timeline-content">
+                        <h3>Operation Python</h3>
+                        <p>The successful follow-up naval strike on Karachi, solidifying Indian naval dominance in the Arabian Sea.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">1999</span>
+                    <div class="timeline-content">
+                        <h3>Operation Talwar</h3>
+                        <p>The naval blockade of Pakistani ports during the Kargil War, effectively cutting off their supply lines.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2006</span>
+                    <div class="timeline-content">
+                        <h3>Operation Sukoon</h3>
+                        <p>The largest maritime evacuation mission since WWII, rescuing Indian, Sri Lankan, and Nepalese nationals from Lebanon.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2008 – Present</span>
+                    <div class="timeline-content">
+                        <h3>Anti-Piracy (Gulf of Aden)</h3>
+                        <p>Continuous patrol and protection of global shipping lanes against maritime piracy.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2015</span>
+                    <div class="timeline-content">
+                        <h3>Operation Rahat</h3>
+                        <p>Heroic evacuation of over 4,600 Indian citizens and 960 foreign nationals from conflict-torn Yemen.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <span class="timeline-date">2020 – Present</span>
+                    <div class="timeline-content">
+                        <h3>Mission SAGAR</h3>
+                        <p>Strategic deployment to provide food, COVID-related medicines, and medical support to IOR island nations.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="focus" class="tab-pane">
+            <div class="info-block">
+                <h2><i class="fas fa-crosshairs"></i> Strategic Focus</h2>
+                <ul class="info-list">
+                    <li><i class="fas fa-ship-circle-check"></i> <strong>Blue-Water Expansion:</strong> Achieving global
+                        reach and persistent presence.</li>
+                    <li><i class="fas fa-ship"></i> <strong>Carrier Battle Groups:</strong> Operationalizing carriers
+                        and advanced submarine fleets.</li>
+                    <li><i class="fas fa-shield-halved"></i> <strong>Domain Awareness:</strong> Anti-piracy operations
+                        and securing sea lanes.</li>
+                    <li><i class="fas fa-radiation"></i> <strong>Strategic Deterrence:</strong> strengthening underwater
+                        nuclear capabilities.</li>
+                    <li><i class="fas fa-hospital"></i> <strong>HADR:</strong> Humanitarian assistance & disaster relief
+                        globally.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
