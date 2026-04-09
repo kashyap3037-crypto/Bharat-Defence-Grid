@@ -221,30 +221,30 @@ body {
 /* Scanned Lines / Noise Effect (Tactical Feel) */
 /* Hero Section */
 .hero {
-    min-height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(
+        to right,
+        rgba(255,153,51,0.15),
+        rgba(255,255,255,1),
+        rgba(19,136,8,0.15)
+    );
     text-align: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    padding: 100px 20px;
     position: relative;
     overflow: hidden;
     border-bottom: 1px solid var(--border-color);
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-size: 40px;
     font-weight: 800;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
     letter-spacing: -1.5px;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 
 .hero h1 span {
-    color: var(--accent-color);
+    color: #c9a646; /* gold defence tone */
     position: relative;
 }
 
@@ -278,34 +278,48 @@ body {
     gap: 1rem;
 }
 
-.btn-primary {
-    background: var(--accent-color);
-    color: #000;
-    padding: 1rem 2rem;
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 10px 18px;
     border-radius: 6px;
     text-decoration: none;
+    font-size: 14px;
+    margin: 8px;
     font-weight: 700;
-    transition: var(--transition);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.btn-primary:hover {
-    background: var(--accent-hover);
-    transform: translateY(-2px);
+.btn.primary {
+    background: #0b1b34;
+    color: white;
+    border: 1px solid #0b1b34;
 }
 
-.btn-secondary {
+.btn.secondary {
+    border: 1px solid #0b1b34;
+    color: #0b1b34;
     background: transparent;
-    color: var(--text-primary);
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 600;
-    border: 1px solid var(--border-color);
-    transition: var(--transition);
 }
 
-.btn-secondary:hover {
-    background: var(--bg-accent);
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(11, 27, 52, 0.2);
+}
+
+.btn.primary:hover {
+    background: #142a4d;
+}
+
+.btn.secondary:hover {
+    background: rgba(11, 27, 52, 0.05);
 }
 
 /* Content Sections */
@@ -916,24 +930,48 @@ html {
         color: var(--accent-color);
     }
 
-    /* Hero: Centered and Compact */
+    /* Hero: Mobile Optimized (User Requested) */
     .hero {
-        min-height: 40vh;
-        padding: 4rem 1.25rem;
-        margin-top: calc(var(--nav-height) + 1rem); 
+        padding: 70px 15px !important;
         text-align: center;
+        background: linear-gradient(
+            to bottom,
+            rgba(255, 153, 51, 0.15),
+            #ffffff,
+            rgba(19, 136, 8, 0.15)
+        ) !important;
+        margin-top: var(--nav-height);
+        min-height: auto;
     }
 
     .hero h1 {
-        font-size: 2.25rem;
-        line-height: 1.2;
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+        font-weight: 700 !important;
+        margin-bottom: 10px !important;
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        padding: 0 5px !important;
+        margin-bottom: 15px !important;
         max-width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .hero-buttons {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+        margin-top: 15px !important;
+    }
+
+    .btn {
+        width: 100% !important;
+        text-align: center !important;
+        margin: 0 !important;
     }
 
     /* India’s Military Strength: Touch-Responsive Horizontal Slider */
