@@ -1101,4 +1101,36 @@ html {
         font-size: 0.75rem !important;
     }
 }
+
+/* Strategic Capability Slider Mobile Logic */
+@media (max-width: 768px) {
+    #defencePowerSection .operations-grid {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 1.5rem !important;
+        padding: 1rem 0 !important;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scroll-behavior: smooth;
+    }
+
+    #defencePowerSection .operations-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    #defencePowerSection .info-block {
+        min-width: 100% !important;
+        flex: 0 0 100% !important;
+        scroll-snap-align: center !important;
+        margin-bottom: 0 !important;
+        border-radius: 12px !important;
+    }
+
+    #defencePowerSection .slider-wrapper {
+        padding: 0 5px;
+    }
+}
+
 

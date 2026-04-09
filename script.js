@@ -256,3 +256,18 @@ function showPowerTab(tabId, event) {
         btn.classList.add('active');
     }
 }
+
+// Strategic Capability Slider Navigation
+function scrollSlider(direction, btn) {
+    const wrapper = btn.closest('.slider-wrapper');
+    if (!wrapper) return;
+    const slider = wrapper.querySelector('.operations-grid');
+    if (!slider) return;
+    const scrollAmount = slider.clientWidth;
+    if (direction === 'left') {
+        slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+}
+
