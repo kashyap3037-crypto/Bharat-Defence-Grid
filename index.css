@@ -50,21 +50,15 @@ body {
     left: 0;
     width: 100%;
     height: var(--nav-height);
-    /* Highly Visible Indian Flag Fade INSIDE the Navbar background */
-    background: linear-gradient(to right,
-            rgba(255, 153, 51, 0.18) 0%,
-            rgba(255, 255, 255, 0.15) 50%,
-            rgba(19, 136, 8, 0.18) 100%),
-        var(--glass-bg);
-
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    border: none;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4rem;
-    z-index: 1000;
+    z-index: 2000;
     transition: var(--transition);
     gap: 1rem;
 }
@@ -809,6 +803,15 @@ body {
     padding: 2rem 80px; /* Standard horizontal buffer for desktop */
 }
 
+/* Hide sliders and arrows on laptop by default */
+.slider-btn {
+    display: none;
+}
+.slider-wrapper::before,
+.slider-wrapper::after {
+    display: none;
+}
+
 /* Base Responsive Rules */
 @media (max-width: 1024px) {
     .container {
@@ -1152,12 +1155,14 @@ html {
         position: relative;
         margin-bottom: 2rem;
         overflow: visible;
+        padding: 0;
     }
 
-    /* Edge Fade Arrows & Gradient Mask */
+    /* Edge Fade Arrows & Gradient Mask - Mobile Only */
     .slider-wrapper::before,
     .slider-wrapper::after {
         content: '';
+        display: block;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -1217,25 +1222,11 @@ html {
     }
 
     .slider-btn.left { 
-        left: -1rem; 
+        left: 0; 
     }
     
     .slider-btn.right { 
-        right: -1rem; 
-    }
-
-    .slider-btn.left { 
-        left: 8px; 
-    }
-    
-    .slider-btn.right { 
-        right: 8px; 
-    }
-
-    .slider-wrapper {
-        position: relative;
-        padding: 0;
-        margin: 1rem 0;
+        right: 0; 
     }
 
     /* Matrix Tab Navigation (User Requested) */
