@@ -940,14 +940,14 @@ body {
     }
 
     .logo {
-        font-size: 0.9rem !important;
+        font-size: 1.05rem !important;
         white-space: nowrap !important;
-        gap: 0.4rem !important;
+        gap: 0.5rem !important;
     }
 
     .logo img {
-        height: 32px !important; /* Medium size */
-        margin-right: 4px !important;
+        height: 38px !important; /* Bigger logo */
+        margin-right: 6px !important;
     }
 
     .nav-toggle {
