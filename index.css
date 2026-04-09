@@ -92,19 +92,32 @@ body {
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.4rem;
-    color: var(--accent-color);
-    letter-spacing: -0.5px;
     display: flex;
     align-items: center;
-    gap: 0.6rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    letter-spacing: 0.5px;
     cursor: pointer;
+}
+
+/* Logo Image */
+.logo-img {
+    height: 28px;
+    margin-right: 8px;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Hover Effect 🔥 */
+.logo:hover .logo-img {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 6px rgba(255,255,255,0.4));
 }
 
 .logo span {
     color: var(--text-primary);
-    font-weight: 400;
+    margin-left: 0.2rem;
 }
 
 
@@ -1102,9 +1115,10 @@ html {
     }
 }
 
-/* Strategic Capability Slider Mobile Logic */
+/* Strategic Capability & Atmanirbhar Slider Mobile Logic */
 @media (max-width: 768px) {
-    #defencePowerSection .operations-grid {
+    #defencePowerSection .operations-grid,
+    #atmanirbharSection .operations-grid {
         display: flex !important;
         flex-direction: row !important;
         overflow-x: auto !important;
@@ -1116,11 +1130,13 @@ html {
         scroll-behavior: smooth;
     }
 
-    #defencePowerSection .operations-grid::-webkit-scrollbar {
+    #defencePowerSection .operations-grid::-webkit-scrollbar,
+    #atmanirbharSection .operations-grid::-webkit-scrollbar {
         display: none;
     }
 
-    #defencePowerSection .info-block {
+    #defencePowerSection .info-block,
+    #atmanirbharSection .info-block {
         min-width: 100% !important;
         flex: 0 0 100% !important;
         scroll-snap-align: center !important;
@@ -1128,8 +1144,56 @@ html {
         border-radius: 12px !important;
     }
 
-    #defencePowerSection .slider-wrapper {
-        padding: 0 5px;
+    .slider-btn {
+        display: flex;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        background: rgba(10, 15, 25, 0.9);
+        color: var(--accent-color);
+        border: 1px solid rgba(212, 175, 55, 0.3);
+        border-radius: 50%;
+        z-index: 100;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6), inset 0 0 10px rgba(212, 175, 55, 0.05);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .slider-btn i {
+        font-size: 1rem;
+        transition: transform 0.2s ease;
+    }
+
+    .slider-btn:active {
+        transform: translateY(-50%) scale(0.85);
+        background: var(--accent-color);
+        color: #000;
+        border-color: var(--accent-color);
+        box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+    }
+
+    .slider-btn.left { 
+        left: 8px; 
+    }
+    
+    .slider-btn.right { 
+        right: 8px; 
+    }
+
+    .slider-wrapper {
+        position: relative;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .logo-img {
+        height: 24px;
     }
 }
 

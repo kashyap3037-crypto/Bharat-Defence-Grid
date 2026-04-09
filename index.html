@@ -25,8 +25,8 @@
     <nav class="navbar" id="mainNavbar">
         <div class="nav-left">
             <div class="logo">
-                <img loading=" lazy\ src="assets/Bharat Defence Grid logo.png" alt="Bharat Defence Grid"
-                    style="height: 30px; margin-right: 6px;">
+                <img src="assets/Bharat Defence Grid logo.png" alt="Bharat Defence Grid Logo" loading="lazy"
+                    class="logo-img">
                 Bharat <span>Defence Grid</span>
             </div>
 
@@ -233,177 +233,214 @@
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         ⚡ Ballistic Missiles (Strategic Deterrence)</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>Prithvi-I / II / III</h3>
-                            <p>Short-range ballistic missiles for battlefield use.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 1988</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Agni-I</h3>
-                            <p>Short-range nuclear-capable ballistic missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2004</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Agni-II</h3>
-                            <p>Medium-range ballistic missile for strategic deterrence.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 1999</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Agni-III</h3>
-                            <p>Intermediate-range ballistic missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2006</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Agni-IV</h3>
-                            <p>Advanced long-range ballistic missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2011</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Agni-V</h3>
-                            <p>Intercontinental ballistic missile (ICBM capability).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2012</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Agni-P (Prime)</h3>
-                            <p>New-generation canisterized ballistic missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 2021</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>Prithvi-I / II / III</h3>
+                                <p>Short-range ballistic missiles for battlefield use.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 1988</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Agni-I</h3>
+                                <p>Short-range nuclear-capable ballistic missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2004</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Agni-II</h3>
+                                <p>Medium-range ballistic missile for strategic deterrence.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 1999</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Agni-III</h3>
+                                <p>Intermediate-range ballistic missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2006</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Agni-IV</h3>
+                                <p>Advanced long-range ballistic missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2011</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Agni-V</h3>
+                                <p>Intercontinental ballistic missile (ICBM capability).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2012</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Agni-P (Prime)</h3>
+                                <p>New-generation canisterized ballistic missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 2021</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         ⚡ Cruise Missiles</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>BrahMos</h3>
-                            <p>Supersonic cruise missile (land, sea, air variants).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 2001</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Nirbhay</h3>
-                            <p>Long-range subsonic cruise missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 2013</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>LACM (Land Attack)</h3>
-                            <p>Extended-range cruise system (Long Range Land Attack Cruise Missile).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Ongoing (2020s)</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>BrahMos</h3>
+                                <p>Supersonic cruise missile (land, sea, air variants).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 2001</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Nirbhay</h3>
+                                <p>Long-range subsonic cruise missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> First test: 2013</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>LACM (Land Attack)</h3>
+                                <p>Extended-range cruise system (Long Range Land Attack Cruise Missile).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Ongoing (2020s)</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         🛡️ Air Defence & Surface-to-Air</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>Akash</h3>
-                            <p>Medium-range surface-to-air missile system.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2015</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Akash-NG</h3>
-                            <p>Next-gen improved Akash system.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2021</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>QRSAM</h3>
-                            <p>Quick Reaction Surface-to-Air Missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2019</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>MR-SAM</h3>
-                            <p>Medium-range air defence system (Barak-8 India version).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2020</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>XR-SAM</h3>
-                            <p>Long-range air defence (Extended Range SAM).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2020s (Development)</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>Akash</h3>
+                                <p>Medium-range surface-to-air missile system.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2015</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Akash-NG</h3>
+                                <p>Next-gen improved Akash system.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2021</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>QRSAM</h3>
+                                <p>Quick Reaction Surface-to-Air Missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2019</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>MR-SAM</h3>
+                                <p>Medium-range air defence system (Barak-8 India version).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2020</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>XR-SAM</h3>
+                                <p>Long-range air defence (Extended Range SAM).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2020s (Development)</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         🎯 Anti-Tank & Tactical</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>Nag</h3>
-                            <p>Fire-and-forget anti-tank guided missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Final trials: 2020</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>HELINA (Dhruvastra)</h3>
-                            <p>Helicopter-launched anti-tank missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2021</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>MPATGM</h3>
-                            <p>Man-portable anti-tank guided missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2018</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>SANT Missile</h3>
-                            <p>Stand-off anti-tank missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2020</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>Nag</h3>
+                                <p>Fire-and-forget anti-tank guided missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Final trials: 2020</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>HELINA (Dhruvastra)</h3>
+                                <p>Helicopter-launched anti-tank missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2021</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>MPATGM</h3>
+                                <p>Man-portable anti-tank guided missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2018</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>SANT Missile</h3>
+                                <p>Stand-off anti-tank missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2020</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         🚀 Special & Advanced Systems</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>Pralay</h3>
-                            <p>Short-range quasi-ballistic missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2021</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Shaurya</h3>
-                            <p>Hypersonic-capable tactical missile.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2008</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>HSTDV</h3>
-                            <p>Hypersonic Technology Demonstrator Vehicle.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Successful test: 2020</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Mission Shakti</h3>
-                            <p>Anti-Satellite (A-SAT) Missile – Space warfare capability.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2019</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>Pralay</h3>
+                                <p>Short-range quasi-ballistic missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2021</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Shaurya</h3>
+                                <p>Hypersonic-capable tactical missile.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2008</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>HSTDV</h3>
+                                <p>Hypersonic Technology Demonstrator Vehicle.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Successful test:
+                                    2020</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Mission Shakti</h3>
+                                <p>Anti-Satellite (A-SAT) Missile – Space warfare capability.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2019</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         💣 Rocket Systems & Artillery</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                        <div class="info-block">
-                            <h3>Pinaka MBRL</h3>
-                            <p>Multi-barrel rocket launcher system.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 1999</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Pinaka Mk-II / Guided</h3>
-                            <p>Extended-range guided rockets.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2016–2021</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Dhanush Artillery Gun</h3>
-                            <p>Indigenous 155mm howitzer.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2019</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>ATAGS</h3>
-                            <p>Advanced Towed Artillery Gun System.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Trials: 2019–2021</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <div class="info-block">
+                                <h3>Pinaka MBRL</h3>
+                                <p>Multi-barrel rocket launcher system.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 1999</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Pinaka Mk-II / Guided</h3>
+                                <p>Extended-range guided rockets.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2016–2021</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Dhanush Artillery Gun</h3>
+                                <p>Indigenous 155mm howitzer.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2019</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>ATAGS</h3>
+                                <p>Advanced Towed Artillery Gun System.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Trials: 2019–2021</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -414,215 +451,269 @@
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         ✈️ Fighter Jets (Indigenous)</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>HAL HF-24 Marut</h3>
-                            <p>India’s first indigenous jet fighter aircraft.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 1967</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>HAL Tejas (LCA Mk1)</h3>
-                            <p>4th generation lightweight multirole fighter.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2016</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Tejas Mk1A</h3>
-                            <p>Advanced version with AESA radar & improved avionics.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Approved: 2021 (Induction
-                                2025+)</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>LCA Tejas Mk2 (MWF)</h3>
-                            <p>Medium-weight fighter with enhanced range & payload.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Development: 2020s</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>AMCA</h3>
-                            <p>Advanced Medium Combat Aircraft (5th gen stealth fighter).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Development phase:
-                                2020s</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>HAL HF-24 Marut</h3>
+                                <p>India’s first indigenous jet fighter aircraft.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 1967</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>HAL Tejas (LCA Mk1)</h3>
+                                <p>4th generation lightweight multirole fighter.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2016</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Tejas Mk1A</h3>
+                                <p>Advanced version with AESA radar & improved avionics.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Approved: 2021 (Induction
+                                    2025+)</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>LCA Tejas Mk2 (MWF)</h3>
+                                <p>Medium-weight fighter with enhanced range & payload.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Development: 2020s</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>AMCA</h3>
+                                <p>Advanced Medium Combat Aircraft (5th gen stealth fighter).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Development phase:
+                                    2020s</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         🚁 Helicopters (Indigenous)</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>HAL Dhruv (ALH)</h3>
-                            <p>Advanced Light Helicopter for transport & utility roles.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2002</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>HAL Rudra (ALH-WSI)</h3>
-                            <p>Armed version of Dhruv helicopter (Weapons System Integrated).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2012</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>HAL LCH Prachand</h3>
-                            <p>India’s first indigenous dedicated attack helicopter.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2022</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>HAL LUH</h3>
-                            <p>Light Utility Helicopter replacing older fleet.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> First flight: 2016</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>HAL Dhruv (ALH)</h3>
+                                <p>Advanced Light Helicopter for transport & utility roles.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2002</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>HAL Rudra (ALH-WSI)</h3>
+                                <p>Armed version of Dhruv helicopter (Weapons System Integrated).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2012</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>HAL LCH Prachand</h3>
+                                <p>India’s first indigenous dedicated attack helicopter.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2022</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>HAL LUH</h3>
+                                <p>Light Utility Helicopter replacing older fleet.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> First flight: 2016</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         📡 Surveillance & Support</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>Netra AEW&C</h3>
-                            <p>Airborne Early Warning & Control system for surveillance.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2017</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>AEW&C Mk2</h3>
-                            <p>Advanced AWACS system (larger platform for surveillance).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Development: 2020s</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>Netra AEW&C</h3>
+                                <p>Airborne Early Warning & Control system for surveillance.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2017</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>AEW&C Mk2</h3>
+                                <p>Advanced AWACS system (larger platform for surveillance).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Development: 2020s</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         🚀 Unmanned Aerial Vehicles (UAVs)</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-                        <div class="info-block">
-                            <h3>Rustom-I / II (TAPAS)</h3>
-                            <p>Medium-altitude long-endurance (MALE) UAV.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Trials: 2016–2023</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Ghatak UCAV</h3>
-                            <p>Stealth unmanned combat aerial vehicle program.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Development: 2020s</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Swarm Drone Systems</h3>
-                            <p>AI-based autonomous drone warfare capability.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Demonstrated: 2021</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+                            <div class="info-block">
+                                <h3>Rustom-I / II (TAPAS)</h3>
+                                <p>Medium-altitude long-endurance (MALE) UAV.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Trials: 2016–2023</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Ghatak UCAV</h3>
+                                <p>Stealth unmanned combat aerial vehicle program.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Development: 2020s</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Swarm Drone Systems</h3>
+                                <p>AI-based autonomous drone warfare capability.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Demonstrated: 2021</span>
+                            </div>
                         </div>
                     </div>
 
                     <h4
                         style="color: var(--accent-color); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
                         🧠 Advanced Air Technologies</h4>
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                        <div class="info-block">
-                            <h3>Uttam AESA Radar</h3>
-                            <p>Indigenous active electronically scanned array radar.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2019</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Kaveri Engine</h3>
-                            <p>Indigenous jet engine program for indigenous fighters.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Status: Ongoing R&D</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Electronic Warfare</h3>
-                            <p>Indigenous avionics & jamming systems (EWS suites).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2000s–Present</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <div class="info-block">
+                                <h3>Uttam AESA Radar</h3>
+                                <p>Indigenous active electronically scanned array radar.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Tested: 2019</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Kaveri Engine</h3>
+                                <p>Indigenous jet engine program for indigenous fighters.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Status: Ongoing R&D</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Electronic Warfare</h3>
+                                <p>Indigenous avionics & jamming systems (EWS suites).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2000s–Present</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Warships & Submarines -->
                 <div id="naval" class="tab-pane" style="margin-top: 2.5rem;">
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                        <div class="info-block">
-                            <h3>INS Nilgiri</h3>
-                            <p>Leander Class — First major indigenous warship.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 1972</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>INS Delhi Class</h3>
-                            <p>First major indigenous guided-missile destroyers.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 1997</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>INS Arihant</h3>
-                            <p>India’s first nuclear-powered ballistic submarine.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Commissioned: 2016</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>INS Kolkata Class</h3>
-                            <p>Advanced indigenous stealth destroyers.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2014</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>INS Vikrant (IAC-1)</h3>
-                            <p>India’s first indigenous aircraft carrier.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Commissioned: 2022</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <div class="info-block">
+                                <h3>INS Nilgiri</h3>
+                                <p>Leander Class — First major indigenous warship.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 1972</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>INS Delhi Class</h3>
+                                <p>First major indigenous guided-missile destroyers.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 1997</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>INS Arihant</h3>
+                                <p>India’s first nuclear-powered ballistic submarine.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Commissioned: 2016</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>INS Kolkata Class</h3>
+                                <p>Advanced indigenous stealth destroyers.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2014</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>INS Vikrant (IAC-1)</h3>
+                                <p>India’s first indigenous aircraft carrier.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Commissioned: 2022</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Land Systems -->
                 <div id="land" class="tab-pane" style="margin-top: 2.5rem;">
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                        <div class="info-block">
-                            <h3>INSAS Rifle</h3>
-                            <p>Standard Indian infantry rifle developed by OFB.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 1998</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Arjun MBT</h3>
-                            <p>Indigenous heavy battle tank with Kanchan armor.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2004</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <div class="info-block">
+                                <h3>INSAS Rifle</h3>
+                                <p>Standard Indian infantry rifle developed by OFB.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 1998</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Arjun MBT</h3>
+                                <p>Indigenous heavy battle tank with Kanchan armor.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Inducted: 2004</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Defence Technologies -->
                 <div id="tech" class="tab-pane" style="margin-top: 2.5rem;">
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                        <div class="info-block">
-                            <h3>Rustom UAV</h3>
-                            <p>Indigenous MALE surveillance drone by DRDO.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Trials: 2016</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Indigenous Radars</h3>
-                            <p>Air defence radar tech by Bharat Electronics Limited (BEL).</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2000s–Present</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>AI & Autonomous</h3>
-                            <p>Next-gen warfare tech for autonomous operations.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2020s</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <div class="info-block">
+                                <h3>Rustom UAV</h3>
+                                <p>Indigenous MALE surveillance drone by DRDO.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Trials: 2016</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Indigenous Radars</h3>
+                                <p>Air defence radar tech by Bharat Electronics Limited (BEL).</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2000s–Present</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>AI & Autonomous</h3>
+                                <p>Next-gen warfare tech for autonomous operations.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2020s</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Atmanirbhar Manufacturing -->
                 <div id="orgs" class="tab-pane" style="margin-top: 2.5rem;">
-                    <div class="operations-grid"
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
-                        <div class="info-block">
-                            <h3>Make in India</h3>
-                            <p>Initiative to boost indigenous production capacity.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> Launched: 2014</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Atmanirbhar Push</h3>
-                            <p>Policy push for a self-reliant defence ecosystem.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2020</span>
-                        </div>
-                        <div class="info-block">
-                            <h3>Defence Corridors</h3>
-                            <p>Manufacturing hubs in UP and Tamil Nadu.</p>
-                            <span class="news-source"><i class="far fa-calendar-alt"></i> 2018–Present</span>
+                    <div class="slider-wrapper">
+                        <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                class="fas fa-chevron-right"></i></button>
+                        <div class="operations-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                            <div class="info-block">
+                                <h3>Make in India</h3>
+                                <p>Initiative to boost indigenous production capacity.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> Launched: 2014</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Atmanirbhar Push</h3>
+                                <p>Policy push for a self-reliant defence ecosystem.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2020</span>
+                            </div>
+                            <div class="info-block">
+                                <h3>Defence Corridors</h3>
+                                <p>Manufacturing hubs in UP and Tamil Nadu.</p>
+                                <span class="news-source"><i class="far fa-calendar-alt"></i> 2018–Present</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -661,8 +752,10 @@
                     <!-- Air Power -->
                     <div id="PowerAir" class="tab-pane" style="margin-top: 2.5rem;">
                         <div class="slider-wrapper">
-                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i class="fas fa-chevron-left"></i></button>
-                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i class="fas fa-chevron-right"></i></button>
+                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                    class="fas fa-chevron-right"></i></button>
                             <div class="operations-grid">
                                 <div class="info-block">
                                     <h3>✈️ Fighters</h3>
@@ -671,9 +764,11 @@
                                                 multirole)</span></div>
                                         <div class="tactical-item"><strong>Rafale</strong><span>Advanced 4.5 gen
                                                 fighter</span></div>
-                                        <div class="tactical-item"><strong>Tejas Mk1 / Mk1A</strong><span>Indigenous light
+                                        <div class="tactical-item"><strong>Tejas Mk1 / Mk1A</strong><span>Indigenous
+                                                light
                                                 fighter</span></div>
-                                        <div class="tactical-item"><strong>MiG-29UPG</strong><span>Upgraded air superiority
+                                        <div class="tactical-item"><strong>MiG-29UPG</strong><span>Upgraded air
+                                                superiority
                                                 fighter</span></div>
                                         <div class="tactical-item"><strong>Jaguar DARIN III</strong><span>Deep strike
                                                 aircraft</span></div>
@@ -688,10 +783,12 @@
                                                 strategic transport</span></div>
                                         <div class="tactical-item"><strong>C-130J Super Hercules</strong><span>Tactical
                                                 transport (special ops)</span></div>
-                                        <div class="tactical-item"><strong>IL-76</strong><span>Heavy transport</span></div>
+                                        <div class="tactical-item"><strong>IL-76</strong><span>Heavy transport</span>
+                                        </div>
                                         <div class="tactical-item"><strong>An-32</strong><span>Medium transport
                                                 (workhorse)</span></div>
-                                        <div class="tactical-item"><strong>Dornier Do-228</strong><span>Light transport /
+                                        <div class="tactical-item"><strong>Dornier Do-228</strong><span>Light transport
+                                                /
                                                 utility</span></div>
                                     </div>
                                 </div>
@@ -708,18 +805,22 @@
                                                 used)</span></div>
                                         <div class="tactical-item"><strong>HAL Prachand LCH</strong><span>Light combat
                                                 helicopter</span></div>
-                                        <div class="tactical-item"><strong>Chetak / Cheetah</strong><span>Light utility (old
+                                        <div class="tactical-item"><strong>Chetak / Cheetah</strong><span>Light utility
+                                                (old
                                                 but used)</span></div>
                                     </div>
                                 </div>
                                 <div class="info-block">
                                     <h3>🛸 UAV / Drones</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>IAI Heron</strong><span>Surveillance UAV</span>
+                                        <div class="tactical-item"><strong>IAI Heron</strong><span>Surveillance
+                                                UAV</span>
                                         </div>
-                                        <div class="tactical-item"><strong>IAI Searcher</strong><span>Tactical UAV</span>
+                                        <div class="tactical-item"><strong>IAI Searcher</strong><span>Tactical
+                                                UAV</span>
                                         </div>
-                                        <div class="tactical-item"><strong>Heron TP</strong><span>Advanced long endurance
+                                        <div class="tactical-item"><strong>Heron TP</strong><span>Advanced long
+                                                endurance
                                                 UAV</span></div>
                                         <div class="tactical-item"><strong>Rustom (TAPAS)</strong><span>Indigenous UAV
                                                 (developing)</span></div>
@@ -732,15 +833,18 @@
                     <!-- Naval Power -->
                     <div id="PowerNavy" class="tab-pane" style="margin-top: 2.5rem;">
                         <div class="slider-wrapper">
-                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i class="fas fa-chevron-left"></i></button>
-                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i class="fas fa-chevron-right"></i></button>
+                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                    class="fas fa-chevron-right"></i></button>
                             <div class="operations-grid">
 
                                 <!-- Carriers -->
                                 <div class="info-block">
                                     <h3>🚢 Aircraft Carriers</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>INS Vikrant</strong><span>Indigenous carrier with
+                                        <div class="tactical-item"><strong>INS Vikrant</strong><span>Indigenous carrier
+                                                with
                                                 MiG-29K operations & STOBAR system</span></div>
                                         <div class="tactical-item"><strong>INS Vikramaditya</strong><span>Modified
                                                 Kiev-class carrier operating MiG-29K fighters</span></div>
@@ -752,19 +856,23 @@
                                     <h3>⚓ Destroyers</h3>
                                     <div class="tactical-list">
                                         <div class="project-group-label">Project 15B (Visakhapatnam Class)</div>
-                                        <div class="tactical-item"><strong>INS Visakhapatnam</strong><span>Stealth destroyer
+                                        <div class="tactical-item"><strong>INS Visakhapatnam</strong><span>Stealth
+                                                destroyer
                                                 (BrahMos & P15B)</span></div>
-                                        <div class="tactical-item"><strong>INS Mormugao</strong><span>Guided missile stealth
+                                        <div class="tactical-item"><strong>INS Mormugao</strong><span>Guided missile
+                                                stealth
                                                 with modern sensors</span></div>
                                         <div class="tactical-item"><strong>INS Imphal</strong><span>Latest with enhanced
                                                 survivability</span></div>
-                                        <div class="tactical-item"><strong>INS Surat</strong><span>Newest (trials/induction
+                                        <div class="tactical-item"><strong>INS Surat</strong><span>Newest
+                                                (trials/induction
                                                 phase)</span></div>
 
                                         <div class="project-group-label">Kolkata Class</div>
                                         <div class="tactical-item"><strong>INS Kolkata</strong><span>Advanced (BrahMos
                                                 strike capability)</span></div>
-                                        <div class="tactical-item"><strong>INS Kochi</strong><span>Multi-role with strong
+                                        <div class="tactical-item"><strong>INS Kochi</strong><span>Multi-role with
+                                                strong
                                                 air defence</span></div>
                                         <div class="tactical-item"><strong>INS Chennai</strong><span>Long-range strike
                                                 destroyer</span></div>
@@ -772,7 +880,8 @@
                                         <div class="project-group-label">Delhi Class (Upgraded)</div>
                                         <div class="tactical-item"><strong>INS Delhi</strong><span>Multi-role (upgraded
                                                 legacy)</span></div>
-                                        <div class="tactical-item"><strong>INS Mysore / INS Mumbai</strong><span>Air defence
+                                        <div class="tactical-item"><strong>INS Mysore / INS Mumbai</strong><span>Air
+                                                defence
                                                 & strike</span></div>
 
                                         <div class="project-group-label">Legacy/Reserve</div>
@@ -818,7 +927,8 @@
                                         <div class="project-group-label">Diesel-Electric Fleet</div>
                                         <div class="tactical-item"><strong>Sindhughosh Class</strong><span>Kilo-class
                                                 (missile capable)</span></div>
-                                        <div class="tactical-item"><strong>Shishumar Class</strong><span>Type 209 (German
+                                        <div class="tactical-item"><strong>Shishumar Class</strong><span>Type 209
+                                                (German
                                                 origin)</span></div>
                                     </div>
                                 </div>
@@ -830,7 +940,8 @@
                                         <div class="project-group-label">ASW & Stealth</div>
                                         <div class="tactical-item"><strong>Kamorta / Kadmatt / Kiltan /
                                                 Kavaratti</strong><span>Stealth anti-submarine corvettes</span></div>
-                                        <div class="tactical-item"><strong>Arnala Class</strong><span>New shallow water ASW
+                                        <div class="tactical-item"><strong>Arnala Class</strong><span>New shallow water
+                                                ASW
                                                 (Upcoming)</span></div>
 
                                         <div class="project-group-label">Missile & Strike</div>
@@ -846,19 +957,24 @@
                     <!-- Army Power -->
                     <div id="PowerArmy" class="tab-pane" style="margin-top: 2.5rem;">
                         <div class="slider-wrapper">
-                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i class="fas fa-chevron-left"></i></button>
-                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i class="fas fa-chevron-right"></i></button>
+                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                    class="fas fa-chevron-right"></i></button>
                             <div class="operations-grid">
 
                                 <!-- Infantry -->
                                 <div class="info-block">
                                     <h3>🪖 Infantry Combat Systems</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>Infantry Battalions</strong><span>Core fighting
+                                        <div class="tactical-item"><strong>Infantry Battalions</strong><span>Core
+                                                fighting
                                                 units for ground combat & border security</span></div>
-                                        <div class="tactical-item"><strong>SIG716 / AK-203</strong><span>Modern 7.62mm and
+                                        <div class="tactical-item"><strong>SIG716 / AK-203</strong><span>Modern 7.62mm
+                                                and
                                                 7.62x39mm assault rifles</span></div>
-                                        <div class="tactical-item"><strong>Bulletproof Gear</strong><span>Advanced ballistic
+                                        <div class="tactical-item"><strong>Bulletproof Gear</strong><span>Advanced
+                                                ballistic
                                                 protection for frontline troops</span></div>
                                         <div class="tactical-item"><strong>Night Vision</strong><span>Tactical NVDs for
                                                 low-light & covert operations</span></div>
@@ -871,15 +987,19 @@
                                 <div class="info-block">
                                     <h3>🛡️ Armoured (Tanks)</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>Arjun Mk1A</strong><span>Indigenous main battle
+                                        <div class="tactical-item"><strong>Arjun Mk1A</strong><span>Indigenous main
+                                                battle
                                                 tank with advanced fire control</span></div>
-                                        <div class="tactical-item"><strong>T-90 Bhishma</strong><span>Primary battle tank
+                                        <div class="tactical-item"><strong>T-90 Bhishma</strong><span>Primary battle
+                                                tank
                                                 with night-fighting capability</span></div>
                                         <div class="tactical-item"><strong>T-72 Ajeya</strong><span>Upgraded multi-role
                                                 battle tank (Large numbers)</span></div>
-                                        <div class="tactical-item"><strong>Zorawar Tank</strong><span>Lightweight tank for
+                                        <div class="tactical-item"><strong>Zorawar Tank</strong><span>Lightweight tank
+                                                for
                                                 high-altitude warfare (New)</span></div>
-                                        <div class="tactical-item"><strong>Future FRCV</strong><span>Next-gen tank program
+                                        <div class="tactical-item"><strong>Future FRCV</strong><span>Next-gen tank
+                                                program
                                                 (planned replacement)</span></div>
                                     </div>
                                 </div>
@@ -888,15 +1008,18 @@
                                 <div class="info-block">
                                     <h3>💣 Artillery & Rocket Systems</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>K9 Vajra</strong><span>Self-propelled artillery
+                                        <div class="tactical-item"><strong>K9 Vajra</strong><span>Self-propelled
+                                                artillery
                                                 for rapid deployment</span></div>
                                         <div class="tactical-item"><strong>Dhanush / ATAGS</strong><span>Indigenous
                                                 long-range howitzer systems</span></div>
-                                        <div class="tactical-item"><strong>Pinaka MBRL</strong><span>Tactical multi-barrel
+                                        <div class="tactical-item"><strong>Pinaka MBRL</strong><span>Tactical
+                                                multi-barrel
                                                 rocket system (Area saturation)</span></div>
                                         <div class="tactical-item"><strong>M777 Howitzer</strong><span>Lightweight
                                                 ultra-mobile mountain artillery</span></div>
-                                        <div class="tactical-item"><strong>Grad BM-21</strong><span>Legacy area saturation
+                                        <div class="tactical-item"><strong>Grad BM-21</strong><span>Legacy area
+                                                saturation
                                                 rocket systems</span></div>
                                     </div>
                                 </div>
@@ -905,13 +1028,16 @@
                                 <div class="info-block">
                                     <h3>🪖 Strategic Formations</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>Strike Corps</strong><span>Offensive formations
+                                        <div class="tactical-item"><strong>Strike Corps</strong><span>Offensive
+                                                formations
                                                 for deep tactical operations</span></div>
                                         <div class="tactical-item"><strong>Mountain Brigade</strong><span>Specialized
                                                 experts for high-altitude warfare</span></div>
-                                        <div class="tactical-item"><strong>Armoured Brigade</strong><span>Heavy offensive
+                                        <div class="tactical-item"><strong>Armoured Brigade</strong><span>Heavy
+                                                offensive
                                                 units (Tank heavy formations)</span></div>
-                                        <div class="tactical-item"><strong>Mechanized Brigade</strong><span>Infantry with
+                                        <div class="tactical-item"><strong>Mechanized Brigade</strong><span>Infantry
+                                                with
                                                 BMP armoured vehicle mobility</span></div>
                                         <div class="tactical-item"><strong>Rapid Division</strong><span>Quick deployment
                                                 forces (~3000-5000 troops)</span></div>
@@ -922,13 +1048,17 @@
                                 <div class="info-block">
                                     <h3>⚔️ Elite Special Forces</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>Para SF</strong><span>Elite forces for covert &
+                                        <div class="tactical-item"><strong>Para SF</strong><span>Elite forces for covert
+                                                &
                                                 surgical missions</span></div>
-                                        <div class="tactical-item"><strong>Para Commandos</strong><span>High-risk operations
+                                        <div class="tactical-item"><strong>Para Commandos</strong><span>High-risk
+                                                operations
                                                 & counter-terrorism</span></div>
-                                        <div class="tactical-item"><strong>MARCOS / Garuds</strong><span>Naval & Air Force
+                                        <div class="tactical-item"><strong>MARCOS / Garuds</strong><span>Naval & Air
+                                                Force
                                                 special operations support</span></div>
-                                        <div class="tactical-item"><strong>NSG</strong><span>Elite counter-terrorism force
+                                        <div class="tactical-item"><strong>NSG</strong><span>Elite counter-terrorism
+                                                force
                                                 (Phantoms)</span></div>
                                     </div>
                                 </div>
@@ -939,15 +1069,19 @@
                     <!-- Missiles -->
                     <div id="PowerMissiles" class="tab-pane" style="margin-top: 2.5rem;">
                         <div class="slider-wrapper">
-                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i class="fas fa-chevron-left"></i></button>
-                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i class="fas fa-chevron-right"></i></button>
+                            <button class="slider-btn left" onclick="scrollSlider('left', this)"><i
+                                    class="fas fa-chevron-left"></i></button>
+                            <button class="slider-btn right" onclick="scrollSlider('right', this)"><i
+                                    class="fas fa-chevron-right"></i></button>
                             <div class="operations-grid">
                                 <div class="info-block">
                                     <h3>🚀 Ballistic Missiles</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>Agni Series (I-V)</strong><span>Strategic nuclear
+                                        <div class="tactical-item"><strong>Agni Series (I-V)</strong><span>Strategic
+                                                nuclear
                                                 deterrence (700km to 5000km+)</span></div>
-                                        <div class="tactical-item"><strong>Agni Prime</strong><span>New-gen high-accuracy
+                                        <div class="tactical-item"><strong>Agni Prime</strong><span>New-gen
+                                                high-accuracy
                                                 tactical ballistic missile</span></div>
                                         <div class="tactical-item"><strong>Prithvi / Pralay</strong><span>Short range
                                                 battlefield surface-to-surface missiles</span></div>
@@ -960,7 +1094,8 @@
                                     <div class="tactical-list">
                                         <div class="tactical-item"><strong>BrahMos (Supersonic)</strong><span>World's
                                                 fastest cruise missile (Multi-platform)</span></div>
-                                        <div class="tactical-item"><strong>BrahMos-ER / A</strong><span>Extended range and
+                                        <div class="tactical-item"><strong>BrahMos-ER / A</strong><span>Extended range
+                                                and
                                                 Air-launched variants</span></div>
                                         <div class="tactical-item"><strong>Nirbhay / LACM</strong><span>Indigenous
                                                 long-range subsonic cruise missiles</span></div>
@@ -969,13 +1104,15 @@
                                 <div class="info-block">
                                     <h3>🛡️ Air Defence</h3>
                                     <div class="tactical-list">
-                                        <div class="tactical-item"><strong>S-400 Triumf</strong><span>Long range multi-layer
+                                        <div class="tactical-item"><strong>S-400 Triumf</strong><span>Long range
+                                                multi-layer
                                                 air defence umbrella</span></div>
                                         <div class="tactical-item"><strong>Akash / Akash-NG</strong><span>Indigenous
                                                 multi-target medium range defence</span></div>
                                         <div class="tactical-item"><strong>Barak-8 (LRSAM)</strong><span>Naval and
                                                 land-based long range defence</span></div>
-                                        <div class="tactical-item"><strong>QRSAM / MRSAM</strong><span>Quick reaction and
+                                        <div class="tactical-item"><strong>QRSAM / MRSAM</strong><span>Quick reaction
+                                                and
                                                 medium range tactical systems</span></div>
                                     </div>
                                 </div>
