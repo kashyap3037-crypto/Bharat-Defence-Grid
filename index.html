@@ -29,7 +29,7 @@
                     style="height: 30px; margin-right: 6px;">
                 Bharat <span>Defence Grid</span>
             </div>
-            
+
             <div class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -654,168 +654,314 @@
                         </button>
                         <button class="tab-btn" onclick="showPowerTab('PowerMissiles', event)">
                             <i class="fas fa-rocket"></i>
-                                        <!-- Strategic Power Slider -->
-                    <div class="power-slider">
-                        <div class="power-track" id="powerTrack">
-                            
-                            <!-- Air Power Slide -->
-                            <div class="power-slide">
-                                <div class="operations-grid">
-                                    <div class="info-block">
-                                        <h3>✈️ Fighters</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>Su-30MKI</strong><span>Main backbone (heavy multirole)</span></div>
-                                            <div class="tactical-item"><strong>Rafale</strong><span>Advanced 4.5 gen fighter</span></div>
-                                            <div class="tactical-item"><strong>Tejas Mk1 / Mk1A</strong><span>Indigenous light fighter</span></div>
-                                            <div class="tactical-item"><strong>MiG-29UPG</strong><span>Upgraded air superiority fighter</span></div>
-                                            <div class="tactical-item"><strong>Jaguar DARIN III</strong><span>Deep strike aircraft</span></div>
-                                            <div class="tactical-item"><strong>Mirage 2000</strong><span>Precision strike fighter</span></div>
-                                        </div>
+                            <span> Missiles</span>
+                        </button>
+                    </div>
+
+                    <!-- Air Power -->
+                    <div id="PowerAir" class="tab-pane" style="margin-top: 2.5rem;">
+                        <div class="operations-grid">
+                            <div class="info-block">
+                                <h3>✈️ Fighters</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>Su-30MKI</strong><span>Main backbone (heavy
+                                            multirole)</span></div>
+                                    <div class="tactical-item"><strong>Rafale</strong><span>Advanced 4.5 gen
+                                            fighter</span></div>
+                                    <div class="tactical-item"><strong>Tejas Mk1 / Mk1A</strong><span>Indigenous light
+                                            fighter</span></div>
+                                    <div class="tactical-item"><strong>MiG-29UPG</strong><span>Upgraded air superiority
+                                            fighter</span></div>
+                                    <div class="tactical-item"><strong>Jaguar DARIN III</strong><span>Deep strike
+                                            aircraft</span></div>
+                                    <div class="tactical-item"><strong>Mirage 2000</strong><span>Precision strike
+                                            fighter</span></div>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <h3>🛫 Transport Aircraft</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>C-17 Globemaster III</strong><span>Heavy lift
+                                            strategic transport</span></div>
+                                    <div class="tactical-item"><strong>C-130J Super Hercules</strong><span>Tactical
+                                            transport (special ops)</span></div>
+                                    <div class="tactical-item"><strong>IL-76</strong><span>Heavy transport</span></div>
+                                    <div class="tactical-item"><strong>An-32</strong><span>Medium transport
+                                            (workhorse)</span></div>
+                                    <div class="tactical-item"><strong>Dornier Do-228</strong><span>Light transport /
+                                            utility</span></div>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <h3>🚁 Helicopters</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>AH-64E Apache</strong><span>Attack
+                                            helicopter</span></div>
+                                    <div class="tactical-item"><strong>CH-47 Chinook</strong><span>Heavy lift
+                                            helicopter</span></div>
+                                    <div class="tactical-item"><strong>HAL Dhruv (ALH)</strong><span>Utility
+                                            helicopter</span></div>
+                                    <div class="tactical-item"><strong>Mi-17 V5</strong><span>Medium lift (most
+                                            used)</span></div>
+                                    <div class="tactical-item"><strong>HAL Prachand LCH</strong><span>Light combat
+                                            helicopter</span></div>
+                                    <div class="tactical-item"><strong>Chetak / Cheetah</strong><span>Light utility (old
+                                            but used)</span></div>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <h3>🛸 UAV / Drones</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>IAI Heron</strong><span>Surveillance UAV</span>
                                     </div>
-                                    <div class="info-block">
-                                        <h3>🛫 Transport Aircraft</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>C-17 Globemaster III</strong><span>Heavy lift strategic transport</span></div>
-                                            <div class="tactical-item"><strong>C-130J Super Hercules</strong><span>Tactical transport (special ops)</span></div>
-                                            <div class="tactical-item"><strong>IL-76</strong><span>Heavy transport</span></div>
-                                            <div class="tactical-item"><strong>An-32</strong><span>Medium transport (workhorse)</span></div>
-                                            <div class="tactical-item"><strong>Dornier Do-228</strong><span>Light transport / utility</span></div>
-                                        </div>
+                                    <div class="tactical-item"><strong>IAI Searcher</strong><span>Tactical UAV</span>
                                     </div>
-                                    <div class="info-block">
-                                        <h3>🚁 Helicopters</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>AH-64E Apache</strong><span>Attack helicopter</span></div>
-                                            <div class="tactical-item"><strong>CH-47 Chinook</strong><span>Heavy lift helicopter</span></div>
-                                            <div class="tactical-item"><strong>HAL Dhruv (ALH)</strong><span>Utility helicopter</span></div>
-                                            <div class="tactical-item"><strong>Mi-17 V5</strong><span>Medium lift (most used)</span></div>
-                                            <div class="tactical-item"><strong>HAL Prachand LCH</strong><span>Light combat helicopter</span></div>
-                                            <div class="tactical-item"><strong>Chetak / Cheetah</strong><span>Light utility (old but used)</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>🛸 UAV / Drones</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>IAI Heron</strong><span>Surveillance UAV</span></div>
-                                            <div class="tactical-item"><strong>IAI Searcher</strong><span>Tactical UAV</span></div>
-                                            <div class="tactical-item"><strong>Heron TP</strong><span>Advanced long endurance UAV</span></div>
-                                            <div class="tactical-item"><strong>Rustom (TAPAS)</strong><span>Indigenous UAV (developing)</span></div>
-                                        </div>
-                                    </div>
+                                    <div class="tactical-item"><strong>Heron TP</strong><span>Advanced long endurance
+                                            UAV</span></div>
+                                    <div class="tactical-item"><strong>Rustom (TAPAS)</strong><span>Indigenous UAV
+                                            (developing)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Naval Power -->
+                    <div id="PowerNavy" class="tab-pane" style="margin-top: 2.5rem;">
+                        <div class="operations-grid">
+
+                            <!-- Carriers -->
+                            <div class="info-block">
+                                <h3>🚢 Aircraft Carriers</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>INS Vikrant</strong><span>Indigenous carrier with
+                                            MiG-29K operations & STOBAR system</span></div>
+                                    <div class="tactical-item"><strong>INS Vikramaditya</strong><span>Modified
+                                            Kiev-class carrier operating MiG-29K fighters</span></div>
                                 </div>
                             </div>
 
-                            <!-- Naval Power Slide -->
-                            <div class="power-slide">
-                                <div class="operations-grid">
-                                    <div class="info-block">
-                                        <h3>🚢 Aircraft Carriers</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>INS Vikrant</strong><span>Indigenous carrier with MiG-29K operations & STOBAR system</span></div>
-                                            <div class="tactical-item"><strong>INS Vikramaditya</strong><span>Modified Kiev-class carrier operating MiG-29K fighters</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>⚓ Destroyers</h3>
-                                        <div class="tactical-list">
-                                            <div class="project-group-label">Project 15B (Visakhapatnam Class)</div>
-                                            <div class="tactical-item"><strong>INS Visakhapatnam</strong><span>Stealth destroyer (BrahMos & P15B)</span></div>
-                                            <div class="tactical-item"><strong>INS Mormugao</strong><span>Guided missile stealth with modern sensors</span></div>
-                                            <div class="tactical-item"><strong>INS Imphal</strong><span>Latest with enhanced survivability</span></div>
-                                            <div class="tactical-item"><strong>INS Surat</strong><span>Newest (trials/induction phase)</span></div>
-                                            <div class="project-group-label">Kolkata Class</div>
-                                            <div class="tactical-item"><strong>INS Kolkata</strong><span>Advanced (BrahMos strike capability)</span></div>
-                                            <div class="tactical-item"><strong>INS Kochi</strong><span>Multi-role with strong air defence</span></div>
-                                            <div class="tactical-item"><strong>INS Chennai</strong><span>Long-range strike destroyer</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>🤿 Submarines</h3>
-                                        <div class="tactical-list">
-                                            <div class="project-group-label">SSBN (Nuclear Ballistic)</div>
-                                            <div class="tactical-item"><strong>INS Arihant / Arighat / Aridhaman</strong><span>Nuclear triad SLBM capability</span></div>
-                                            <div class="project-group-label">Kalvari Class (Scorpene)</div>
-                                            <div class="tactical-item"><strong>Kalvari / Khanderi / Karanj / Vela / Vagir / Vagsheer</strong><span>Silent attack submarines</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>🚤 Corvettes</h3>
-                                        <div class="tactical-list">
-                                            <div class="project-group-label">ASW & Stealth</div>
-                                            <div class="tactical-item"><strong>Kamorta / Kadmatt / Kiltan / Kavaratti</strong><span>Stealth anti-submarine corvettes</span></div>
-                                            <div class="tactical-item"><strong>Arnala Class</strong><span>New shallow water ASW (Upcoming)</span></div>
-                                        </div>
-                                    </div>
+                            <!-- Destroyers -->
+                            <div class="info-block">
+                                <h3>⚓ Destroyers</h3>
+                                <div class="tactical-list">
+                                    <div class="project-group-label">Project 15B (Visakhapatnam Class)</div>
+                                    <div class="tactical-item"><strong>INS Visakhapatnam</strong><span>Stealth destroyer
+                                            (BrahMos & P15B)</span></div>
+                                    <div class="tactical-item"><strong>INS Mormugao</strong><span>Guided missile stealth
+                                            with modern sensors</span></div>
+                                    <div class="tactical-item"><strong>INS Imphal</strong><span>Latest with enhanced
+                                            survivability</span></div>
+                                    <div class="tactical-item"><strong>INS Surat</strong><span>Newest (trials/induction
+                                            phase)</span></div>
+
+                                    <div class="project-group-label">Kolkata Class</div>
+                                    <div class="tactical-item"><strong>INS Kolkata</strong><span>Advanced (BrahMos
+                                            strike capability)</span></div>
+                                    <div class="tactical-item"><strong>INS Kochi</strong><span>Multi-role with strong
+                                            air defence</span></div>
+                                    <div class="tactical-item"><strong>INS Chennai</strong><span>Long-range strike
+                                            destroyer</span></div>
+
+                                    <div class="project-group-label">Delhi Class (Upgraded)</div>
+                                    <div class="tactical-item"><strong>INS Delhi</strong><span>Multi-role (upgraded
+                                            legacy)</span></div>
+                                    <div class="tactical-item"><strong>INS Mysore / INS Mumbai</strong><span>Air defence
+                                            & strike</span></div>
+
+                                    <div class="project-group-label">Legacy/Reserve</div>
+                                    <div class="tactical-item"><strong>INS Rajput / Rana</strong><span>Older guided
+                                            missile destroyers</span></div>
                                 </div>
                             </div>
 
-                            <!-- Army Power Slide -->
-                            <div class="power-slide">
-                                <div class="operations-grid">
-                                    <div class="info-block">
-                                        <h3>🪖 Infantry Combat Systems</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>Infantry Battalions</strong><span>Core fighting units for ground combat & border security</span></div>
-                                            <div class="tactical-item"><strong>SIG716 / AK-203</strong><span>Modern 7.62mm and 7.62x39mm assault rifles</span></div>
-                                            <div class="tactical-item"><strong>Bulletproof Gear</strong><span>Advanced ballistic protection for frontline troops</span></div>
-                                            <div class="tactical-item"><strong>Night Vision</strong><span>Tactical NVDs for low-light & covert operations</span></div>
-                                            <div class="tactical-item"><strong>Battlefield Systems</strong><span>Digital communication & surveillance Support</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>🛡️ Armoured (Tanks)</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>Arjun Mk1A</strong><span>Indigenous main battle tank with advanced fire control</span></div>
-                                            <div class="tactical-item"><strong>T-90 Bhishma</strong><span>Primary battle tank with night-fighting capability</span></div>
-                                            <div class="tactical-item"><strong>T-72 Ajeya</strong><span>Upgraded multi-role battle tank (Large numbers)</span></div>
-                                            <div class="tactical-item"><strong>Zorawar Tank</strong><span>Lightweight tank for high-altitude warfare (New)</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>💣 Artillery & Rocket Systems</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>K9 Vajra</strong><span>Self-propelled artillery for rapid deployment</span></div>
-                                            <div class="tactical-item"><strong>Dhanush / ATAGS</strong><span>Indigenous long-range howitzer systems</span></div>
-                                            <div class="tactical-item"><strong>Pinaka MBRL</strong><span>Tactical multi-barrel rocket system (Area saturation)</span></div>
-                                            <div class="tactical-item"><strong>M777 Howitzer</strong><span>Lightweight ultra-mobile mountain artillery</span></div>
-                                        </div>
-                                    </div>
+                            <!-- Frigates -->
+                            <div class="info-block">
+                                <h3>🛳️ Frigates</h3>
+                                <div class="tactical-list">
+                                    <div class="project-group-label">Project 17A (Nilgiri Class)</div>
+                                    <div class="tactical-item"><strong>INS Nilgiri / Himgiri /
+                                            Udaygiri</strong><span>Next-gen stealth frigates</span></div>
+
+                                    <div class="project-group-label">Shivalik Class (Project 17)</div>
+                                    <div class="tactical-item"><strong>INS Shivalik / Satpura /
+                                            Sahyadri</strong><span>Stealth multi-role frigates</span></div>
+
+                                    <div class="project-group-label">Talwar Class (Project 1135.6)</div>
+                                    <div class="tactical-item"><strong>Talwar / Trishul / Tabar / Teg / Tarkash /
+                                            Trikand</strong><span>Advanced stealth frigates</span></div>
+
+                                    <div class="project-group-label">Indigenous Guided Missile</div>
+                                    <div class="tactical-item"><strong>INS Brahmaputra / Betwa /
+                                            Beas</strong><span>Multi-role legacy frigates</span></div>
                                 </div>
                             </div>
 
-                            <!-- Missiles Power Slide -->
-                            <div class="power-slide">
-                                <div class="operations-grid">
-                                    <div class="info-block">
-                                        <h3>🚀 Ballistic Missiles</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>Agni Series (I-V)</strong><span>Strategic nuclear deterrence (700km to 5000km+)</span></div>
-                                            <div class="tactical-item"><strong>Agni Prime</strong><span>New-gen high-accuracy tactical ballistic missile</span></div>
-                                            <div class="tactical-item"><strong>Prithvi / Pralay</strong><span>Short range battlefield surface-to-surface missiles</span></div>
-                                            <div class="tactical-item"><strong>K-4 SLBM</strong><span>Submarine-launched strategic missile (Deterrence)</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>🎯 Cruise Missiles</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>BrahMos (Supersonic)</strong><span>World's fastest cruise missile (Multi-platform)</span></div>
-                                            <div class="tactical-item"><strong>BrahMos-ER / A</strong><span>Extended range and Air-launched variants</span></div>
-                                            <div class="tactical-item"><strong>Nirbhay / LACM</strong><span>Indigenous long-range subsonic cruise missiles</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="info-block">
-                                        <h3>🛡️ Air Defence</h3>
-                                        <div class="tactical-list">
-                                            <div class="tactical-item"><strong>S-400 Triumf</strong><span>Long range multi-layer air defence umbrella</span></div>
-                                            <div class="tactical-item"><strong>Akash / Akash-NG</strong><span>Indigenous multi-target medium range defence</span></div>
-                                            <div class="tactical-item"><strong>Barak-8 (LRSAM)</strong><span>Naval and land-based long range defence</span></div>
-                                        </div>
-                                    </div>
+                            <!-- Submarines -->
+                            <div class="info-block">
+                                <h3>🤿 Submarines</h3>
+                                <div class="tactical-list">
+                                    <div class="project-group-label">SSBN (Nuclear Ballistic)</div>
+                                    <div class="tactical-item"><strong>INS Arihant / Arighat /
+                                            Aridhaman</strong><span>Nuclear triad SLBM capability</span></div>
+
+                                    <div class="project-group-label">Kalvari Class (Scorpene)</div>
+                                    <div class="tactical-item"><strong>Kalvari / Khanderi / Karanj / Vela / Vagir /
+                                            Vagsheer</strong><span>Silent attack submarines</span></div>
+
+                                    <div class="project-group-label">Diesel-Electric Fleet</div>
+                                    <div class="tactical-item"><strong>Sindhughosh Class</strong><span>Kilo-class
+                                            (missile capable)</span></div>
+                                    <div class="tactical-item"><strong>Shishumar Class</strong><span>Type 209 (German
+                                            origin)</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Corvettes -->
+                            <div class="info-block">
+                                <h3>🚤 Corvettes</h3>
+                                <div class="tactical-list">
+                                    <div class="project-group-label">ASW & Stealth</div>
+                                    <div class="tactical-item"><strong>Kamorta / Kadmatt / Kiltan /
+                                            Kavaratti</strong><span>Stealth anti-submarine corvettes</span></div>
+                                    <div class="tactical-item"><strong>Arnala Class</strong><span>New shallow water ASW
+                                            (Upcoming)</span></div>
+
+                                    <div class="project-group-label">Missile & Strike</div>
+                                    <div class="tactical-item"><strong>Kora / Kirch / Veer / Nipat /
+                                            Nirghat</strong><span>High-speed strike vessels</span></div>
                                 </div>
                             </div>
 
                         </div>
-                    </div>ystems</span></div>
+                    </div>
+
+                    <!-- Army Power -->
+                    <div id="PowerArmy" class="tab-pane" style="margin-top: 2.5rem;">
+                        <div class="operations-grid">
+
+                            <!-- Infantry -->
+                            <div class="info-block">
+                                <h3>🪖 Infantry Combat Systems</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>Infantry Battalions</strong><span>Core fighting
+                                            units for ground combat & border security</span></div>
+                                    <div class="tactical-item"><strong>SIG716 / AK-203</strong><span>Modern 7.62mm and
+                                            7.62x39mm assault rifles</span></div>
+                                    <div class="tactical-item"><strong>Bulletproof Gear</strong><span>Advanced ballistic
+                                            protection for frontline troops</span></div>
+                                    <div class="tactical-item"><strong>Night Vision</strong><span>Tactical NVDs for
+                                            low-light & covert operations</span></div>
+                                    <div class="tactical-item"><strong>Battlefield Systems</strong><span>Digital
+                                            communication & digital surveillance Support</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Tanks -->
+                            <div class="info-block">
+                                <h3>🛡️ Armoured (Tanks)</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>Arjun Mk1A</strong><span>Indigenous main battle
+                                            tank with advanced fire control</span></div>
+                                    <div class="tactical-item"><strong>T-90 Bhishma</strong><span>Primary battle tank
+                                            with night-fighting capability</span></div>
+                                    <div class="tactical-item"><strong>T-72 Ajeya</strong><span>Upgraded multi-role
+                                            battle tank (Large numbers)</span></div>
+                                    <div class="tactical-item"><strong>Zorawar Tank</strong><span>Lightweight tank for
+                                            high-altitude warfare (New)</span></div>
+                                    <div class="tactical-item"><strong>Future FRCV</strong><span>Next-gen tank program
+                                            (planned replacement)</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Artillery -->
+                            <div class="info-block">
+                                <h3>💣 Artillery & Rocket Systems</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>K9 Vajra</strong><span>Self-propelled artillery
+                                            for rapid deployment</span></div>
+                                    <div class="tactical-item"><strong>Dhanush / ATAGS</strong><span>Indigenous
+                                            long-range howitzer systems</span></div>
+                                    <div class="tactical-item"><strong>Pinaka MBRL</strong><span>Tactical multi-barrel
+                                            rocket system (Area saturation)</span></div>
+                                    <div class="tactical-item"><strong>M777 Howitzer</strong><span>Lightweight
+                                            ultra-mobile mountain artillery</span></div>
+                                    <div class="tactical-item"><strong>Grad BM-21</strong><span>Legacy area saturation
+                                            rocket systems</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Brigades -->
+                            <div class="info-block">
+                                <h3>🪖 Strategic Formations</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>Strike Corps</strong><span>Offensive formations
+                                            for deep tactical operations</span></div>
+                                    <div class="tactical-item"><strong>Mountain Brigade</strong><span>Specialized
+                                            experts for high-altitude warfare</span></div>
+                                    <div class="tactical-item"><strong>Armoured Brigade</strong><span>Heavy offensive
+                                            units (Tank heavy formations)</span></div>
+                                    <div class="tactical-item"><strong>Mechanized Brigade</strong><span>Infantry with
+                                            BMP armoured vehicle mobility</span></div>
+                                    <div class="tactical-item"><strong>Rapid Division</strong><span>Quick deployment
+                                            forces (~3000-5000 troops)</span></div>
+                                </div>
+                            </div>
+
+                            <!-- Special Forces -->
+                            <div class="info-block">
+                                <h3>⚔️ Elite Special Forces</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>Para SF</strong><span>Elite forces for covert &
+                                            surgical missions</span></div>
+                                    <div class="tactical-item"><strong>Para Commandos</strong><span>High-risk operations
+                                            & counter-terrorism</span></div>
+                                    <div class="tactical-item"><strong>MARCOS / Garuds</strong><span>Naval & Air Force
+                                            special operations support</span></div>
+                                    <div class="tactical-item"><strong>NSG</strong><span>Elite counter-terrorism force
+                                            (Phantoms)</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Missiles -->
+                    <div id="PowerMissiles" class="tab-pane" style="margin-top: 2.5rem;">
+                        <div class="operations-grid">
+                            <div class="info-block">
+                                <h3>🚀 Ballistic Missiles</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>Agni Series (I-V)</strong><span>Strategic nuclear
+                                            deterrence (700km to 5000km+)</span></div>
+                                    <div class="tactical-item"><strong>Agni Prime</strong><span>New-gen high-accuracy
+                                            tactical ballistic missile</span></div>
+                                    <div class="tactical-item"><strong>Prithvi / Pralay</strong><span>Short range
+                                            battlefield surface-to-surface missiles</span></div>
+                                    <div class="tactical-item"><strong>K-4 SLBM</strong><span>Submarine-launched
+                                            strategic missile (Deterrence)</span></div>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <h3>🎯 Cruise Missiles</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>BrahMos (Supersonic)</strong><span>World's
+                                            fastest cruise missile (Multi-platform)</span></div>
+                                    <div class="tactical-item"><strong>BrahMos-ER / A</strong><span>Extended range and
+                                            Air-launched variants</span></div>
+                                    <div class="tactical-item"><strong>Nirbhay / LACM</strong><span>Indigenous
+                                            long-range subsonic cruise missiles</span></div>
+                                </div>
+                            </div>
+                            <div class="info-block">
+                                <h3>🛡️ Air Defence</h3>
+                                <div class="tactical-list">
+                                    <div class="tactical-item"><strong>S-400 Triumf</strong><span>Long range multi-layer
+                                            air defence umbrella</span></div>
+                                    <div class="tactical-item"><strong>Akash / Akash-NG</strong><span>Indigenous
+                                            multi-target medium range defence</span></div>
+                                    <div class="tactical-item"><strong>Barak-8 (LRSAM)</strong><span>Naval and
+                                            land-based long range defence</span></div>
+                                    <div class="tactical-item"><strong>QRSAM / MRSAM</strong><span>Quick reaction and
+                                            medium range tactical systems</span></div>
                                 </div>
                             </div>
                         </div>
