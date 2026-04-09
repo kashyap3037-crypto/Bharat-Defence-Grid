@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.addEventListener('click', (e) => {
             e.stopPropagation();
             navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
             const icon = navToggle.querySelector('i');
             if (icon) {
                 icon.classList.toggle('fa-bars');
@@ -46,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
                 const icon = navToggle.querySelector('i');
                 if (icon) {
                     icon.classList.add('fa-bars');
@@ -58,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('click', (e) => {
             if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                 navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
                 const icon = navToggle.querySelector('i');
                 if (icon) {
                     icon.classList.add('fa-bars');
