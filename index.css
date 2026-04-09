@@ -851,27 +851,40 @@ body {
         font-size: 0.75rem;
     }
 
-    .operations-grid {
+    /* High Specificity Mobile Carousel */
+    body .operations-grid, 
+    body .org-grid {
         display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
         overflow-x: auto !important;
         scroll-snap-type: x mandatory !important;
-        gap: 1rem !important;
-        padding-bottom: 1rem !important;
-        scrollbar-width: none; /* Hide scrollbar for clean look */
-        -ms-overflow-style: none;
+        gap: 1.25rem !important;
+        padding-bottom: 2rem !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin-left: -20px !important; /* Bleed to edges */
+        margin-right: -20px !important;
+        scrollbar-width: none !important;
+        -ms-overflow-style: none !important;
+        width: calc(100% + 40px) !important;
     }
 
-    .operations-grid::-webkit-scrollbar {
-        display: none;
+    .operations-grid::-webkit-scrollbar,
+    .org-grid::-webkit-scrollbar {
+        display: none !important;
     }
 
-    .operations-grid > .info-block {
-        flex: 0 0 88% !important; /* Show one item + a peek of the next */
+    .operations-grid > .info-block,
+    .org-grid > .org-card {
+        flex: 0 0 85% !important; /* Slightly smaller to see more of next item */
         scroll-snap-align: center !important;
+        height: auto !important;
     }
 
-    .operations-grid > .info-block:last-child {
-        margin-right: 1rem;
+    .operations-grid > .info-block:last-child,
+    .org-grid > .org-card:last-child {
+        margin-right: 20px !important;
     }
 
     .intel-card {
