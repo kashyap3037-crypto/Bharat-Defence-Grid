@@ -932,6 +932,36 @@ body {
     .tactical-item {
         padding: 0.4rem 0.6rem;
     }
+
+    /* Force Single Line Navbar */
+    .navbar {
+        padding: 0 0.8rem !important;
+        gap: 0.4rem !important;
+    }
+
+    .logo {
+        font-size: 0.9rem !important;
+        white-space: nowrap !important;
+        gap: 0.4rem !important;
+    }
+
+    .logo img {
+        height: 32px !important; /* Medium size */
+        margin-right: 4px !important;
+    }
+
+    .nav-toggle {
+        font-size: 1.2rem !important;
+    }
+
+    .nav-right {
+        gap: 0.6rem !important;
+    }
+
+    .theme-toggle {
+        font-size: 1rem !important;
+        padding: 0.3rem !important;
+    }
 }
 
 @keyframes intelligenceFade {
