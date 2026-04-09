@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Intelligence Feed | Bharat Defence Grid</title>
+    <meta name="description" content="Real-time Indian defence updates, projects, and future warfare insights.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar" id="mainNavbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="assets/Bharat Defence Grid logo.png" alt="Bharat Defence Grid Logo" loading="lazy"
+                    class="logo-img">
+                Bharat <span>Defence Grid</span>
+            </div>
+
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="live.html" class="nav-link active">Live Feed</a></li>
+            <li><a href="army.html" class="nav-link">Army</a></li>
+            <li><a href="navy.html" class="nav-link">Navy</a></li>
+            <li><a href="airforce.html" class="nav-link">Air Force</a></li>
+            <li><a href="index.html#atmanirbharSection" class="nav-link">Indigenous</a></li>
+            <li><a href="tech.html" class="nav-link">Joint Tech</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search insights...">
+            </div>
+
+            <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <section class="hero" style="min-height: auto; padding: 100px 20px;">
+            <h1>Live <span>Strategic</span> Intelligence</h1>
+            <p>Establishing real-time secure link to frontline command. Tracking every mission across India's borders.</p>
+        </section>
+
+        <!-- Live Feed Section Migrated from Home -->
+        <section class="news-section" id="newsFeed">
+            <div class="container" style="padding: 4rem;">
+                <!-- Sector Control -->
+                <div class="sector-tabs">
+                    <button class="sector-btn active" onclick="filterBySector('all', event)">📰 All</button>
+                    <button class="sector-btn" onclick="filterBySector('army', event)">🪖Army</button>
+                    <button class="sector-btn" onclick="filterBySector('navy', event)">⚓Navy</button>
+                    <button class="sector-btn" onclick="filterBySector('airforce', event)">✈️ Air Force</button>
+                    <button class="sector-btn" onclick="filterBySector('drdo', event)">🚀 DRDO</button>
+                </div>
+
+                <!-- Live Tactical Ticker -->
+                <div class="news-ticker">
+                    <div class="ticker-badge"><span class="live-dot"></span> LIVE</div>
+                    <div class="ticker-scroll" id="tickerScroll">
+                        <span class="ticker-msg">Initializing secure intelligence stream...</span>
+                    </div>
+                </div>
+
+                <div class="intel-report-container">
+                    <div class="report-header">
+                        <h2>🇮🇳 India Defence News</h2>
+                    </div>
+
+                    <div class="news-list-label">📰 STRATEGIC INTELLIGENCE STREAM</div>
+
+                    <div class="intel-list" id="intelList">
+                        <!-- Items injected by JS -->
+                        <div class="intel-placeholder">Establishing secure link to Command...</div>
+                    </div>
+
+                    <div class="load-more-section">
+                        <button class="btn-secondary" id="loadMoreBtn" onclick="loadMoreIntel()">
+                            <i class="fas fa-sync-alt"></i> 🔄 Load More Updates
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Ensure the active tab and filters work on this page
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof initNews === 'function') initNews();
+        });
+    </script>
+</body>
+
+</html>

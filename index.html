@@ -37,11 +37,12 @@
 
         <ul class="nav-menu">
             <li><a href="index.html" class="nav-link active">Home</a></li>
-            <li><a href="#newsFeed" class="nav-link">Live Feed</a></li>
+            <li><a href="live.html" class="nav-link">Live Feed</a></li>
             <li><a href="army.html" class="nav-link">Army</a></li>
             <li><a href="navy.html" class="nav-link">Navy</a></li>
             <li><a href="airforce.html" class="nav-link">Air Force</a></li>
-            <li><a href="tech.html" class="nav-link">Joint Forces</a></li>
+            <li><a href="#atmanirbharSection" class="nav-link">Indigenous</a></li>
+            <li><a href="tech.html" class="nav-link">Joint Tech</a></li>
         </ul>
 
 
@@ -68,49 +69,10 @@
             </p>
             <div class="hero-buttons">
                 <a href="#atmanirbharSection" class="btn primary">Explore Power</a>
-                <a href="#live-feed" class="btn secondary">Live Updates</a>
+                <a href="live.html" class="btn secondary">Live Updates</a>
             </div>
         </section> <!-- High-Density Tactical Intelligence Feed -->
-        <section class="news-section" id="newsFeed">
-            <div class="container" style="padding: 4rem;">
-                <!-- Sector Control -->
-                <div class="sector-tabs">
-                    <button class="sector-btn active" onclick="filterBySector('all', event)">📰 All</button>
-                    <button class="sector-btn" onclick="filterBySector('army', event)">🪖Army</button>
-                    <button class="sector-btn" onclick="filterBySector('navy', event)">⚓Navy</button>
-                    <button class="sector-btn" onclick="filterBySector('airforce', event)">✈️ Air Force</button>
-                    <button class="sector-btn" onclick="filterBySector('drdo', event)">🚀 DRDO</button>
-                </div>
 
-                <!-- Live Tactical Ticker -->
-                <div class="news-ticker">
-                    <div class="ticker-badge"><span class="live-dot"></span> LIVE</div>
-                    <div class="ticker-scroll" id="tickerScroll">
-                        <span class="ticker-msg">Initializing secure intelligence stream...</span>
-                    </div>
-                </div>
-
-                <div class="intel-report-container">
-                    <div class="report-header">
-                        <h2>🇮🇳 India Defence News</h2>
-
-                    </div>
-
-                    <div class="news-list-label">📰 STRATEGIC INTELLIGENCE STREAM</div>
-
-                    <div class="intel-list" id="intelList">
-                        <!-- Items injected by JS -->
-                        <div class="intel-placeholder">Establishing secure link to Command...</div>
-                    </div>
-
-                    <div class="load-more-section">
-                        <button class="btn-secondary" id="loadMoreBtn" onclick="loadMoreIntel()">
-                            <i class="fas fa-sync-alt"></i> 🔄 Load More Updates
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
         <section class="strength-section" id="militaryStrength">
             <div class="container" style="padding: 0 4rem;">
                 <h2 class="section-title">India’s Military Strength</h2>
