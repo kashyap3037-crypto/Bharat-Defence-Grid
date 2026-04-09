@@ -234,22 +234,64 @@ function showAtmaTab(tabId, event) {
     }
 }
 
-// Defence Power Tabs (Toggle Support)
+// Strategic Power Slider Logic
+let currentPowerStage = 0;
+const powerTrack = document.getElementById('powerTrack');
+
 function showPowerTab(tabId, event) {
     if (event) event.preventDefault();
-    const btn = event.currentTarget;
-    const isAlreadyActive = btn.classList.contains('active');
+    const tabMap = { 'PowerAir': 0, 'PowerNavy': 1, 'PowerArmy': 2, 'PowerMissiles': 3 };
+    const targetStage = tabMap[tabId] !== undefined ? tabMap[tabId] : 0;
+    moveToPowerStage(targetStage);
+}
+
+function moveToPowerStage(index) {
+    if (index < 0 || index > 3) return;
+    currentPowerStage = index;
     
+    if (powerTrack) {
+        powerTrack.style.transform = `translateX(-${index * 25}%)`;
+    }
+
+    // Update buttons
     const section = document.getElementById('defencePowerSection');
-    const panes = section.querySelectorAll('.tab-pane');
-    const buttons = section.querySelectorAll('.tab-btn');
-    
-    panes.forEach(p => p.classList.remove('active'));
-    buttons.forEach(b => b.classList.remove('active'));
-    
-    if (!isAlreadyActive) {
-        const activePane = document.getElementById(tabId);
-        if (activePane) activePane.classList.add('active');
-        btn.classList.add('active');
+    if (section) {
+        const buttons = section.querySelectorAll('.tab-btn');
+        buttons.forEach((btn, i) => {
+            if (i === index) btn.classList.add('active');
+            else btn.classList.remove('active');
+        });
     }
 }
+
+// Touch Support for Slider
+document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.power-slider');
+    if (slider) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        slider.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        slider.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        function handleSwipe() {
+            const threshold = 50;
+            if (touchStartX - touchEndX > threshold) {
+                // Swipe Left -> Next
+                moveToPowerStage(currentPowerStage + 1);
+            } else if (touchEndX - touchStartX > threshold) {
+                // Swipe Right -> Prev
+                moveToPowerStage(currentPowerStage - 1);
+            }
+        }
+    }
+    
+    // Set initial active state
+    moveToPowerStage(0);
+});
