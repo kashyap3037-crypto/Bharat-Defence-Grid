@@ -66,6 +66,21 @@ body {
     padding: 0 4rem;
     z-index: 1000;
     transition: var(--transition);
+    gap: 1rem;
+}
+
+.nav-toggle {
+    display: none;
+    font-size: 1.4rem;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 1001;
+}
+
+.nav-toggle:hover {
+    color: var(--text-primary);
+    transform: scale(1.1);
 }
 
 
@@ -853,6 +868,51 @@ body {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+    }
+
+    /* Mobile Nav Matrix */
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: var(--nav-height);
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - var(--nav-height));
+        background: var(--bg-primary);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 4rem 2rem;
+        gap: 2rem;
+        transition: var(--transition);
+        backdrop-filter: blur(20px);
+        border-right: 1px solid var(--border-color);
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .nav-menu.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .nav-right {
+        gap: 1rem;
+    }
+
+    .search-container {
+        display: none; /* Hide search on extreme mobile to fit icons */
     }
 }
 
