@@ -253,7 +253,7 @@ body {
     color: var(--text-secondary);
     max-width: 700px;
     line-height: 1.7;
-    margin-bottom: 2.5rem;
+    margin: 0 auto 2.5rem; /* Centered with bottom breathing room */
 }
 
 .badge {
@@ -280,8 +280,10 @@ body {
 
 .hero-buttons {
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-top: 2rem;
+    justify-content: center; /* Tactical Alignment Center */
+    flex-wrap: wrap; 
 }
 
 .btn {
