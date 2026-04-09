@@ -790,15 +790,16 @@ body {
 
 /* Container & Layout Consistency */
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 4rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 2rem 80px; /* Standard horizontal buffer for desktop */
 }
 
 /* Base Responsive Rules */
 @media (max-width: 1024px) {
     .container {
-        padding: 3rem 2rem;
+        padding: 2rem 40px;
     }
     
     .hero h1 {
@@ -808,7 +809,7 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 20px;
     }
 
     .navbar-container {
@@ -918,7 +919,7 @@ body {
 
 @media (max-width: 480px) {
     .container {
-        padding: 1.5rem 1rem;
+        padding: 1rem 12px;
     }
 
     .hero h1 {
