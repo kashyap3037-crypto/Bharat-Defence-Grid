@@ -851,7 +851,7 @@ body {
         font-size: 0.75rem;
     }
 
-    /* High Specificity Mobile Carousel */
+    /* High Specificity Mobile Carousel - Single Item Focus */
     body .operations-grid, 
     body .org-grid {
         display: flex !important;
@@ -859,15 +859,13 @@ body {
         flex-wrap: nowrap !important;
         overflow-x: auto !important;
         scroll-snap-type: x mandatory !important;
-        gap: 1.25rem !important;
-        padding-bottom: 2rem !important;
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        margin-left: -20px !important; /* Bleed to edges */
-        margin-right: -20px !important;
+        scroll-behavior: smooth !important;
+        gap: 0 !important; /* No gap for single item focus */
+        padding: 0 !important;
+        margin: 0 !important;
         scrollbar-width: none !important;
         -ms-overflow-style: none !important;
-        width: calc(100% + 40px) !important;
+        width: 100% !important;
     }
 
     .operations-grid::-webkit-scrollbar,
@@ -877,9 +875,11 @@ body {
 
     .operations-grid > .info-block,
     .org-grid > .org-card {
-        flex: 0 0 85% !important; /* Slightly smaller to see more of next item */
+        flex: 0 0 100% !important; /* EXACTLY one item at a time */
         scroll-snap-align: center !important;
+        scroll-snap-stop: always !important;
         height: auto !important;
+        border-radius: 0 !important; /* Square for full edge-to-edge look */
     }
 
     .operations-grid > .info-block:last-child,
